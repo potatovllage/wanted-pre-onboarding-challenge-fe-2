@@ -3,6 +3,7 @@
 현재 대덕 SW 마이스터고에 재학중이며 2023년에 3학년으로 진학하게 되는 전영준입니다. <br/>
 프론트엔드 분야에 관심을 가져 공부하고 있습니다. 프론트엔드 개발자로 취업하고 싶습니다..!
 
+https://potatovllage.github.io/wanted-pre-onboarding-challenge-fe-2/index.html
 
 ## 챌린지 과제 가이드
 
