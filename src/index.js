@@ -26,17 +26,63 @@ Todo {
  * @param {string || null} tag
  * @returns {number} post_id
  */
-const Create = (title, content, category, whether, tag) => {};
+const CreatePost = (title, content, category, whether, tag) => {};
 
 /**
  * @description 모든 할 일 조회하기
- * @return {object[]} all_posts
+ * @returns {object[]} all_posts
  */
-const getAllPosts = () => {};
+const GetAllPosts = () => {};
 
 /**
  * @description 특정 할 일 조회하기
  * @param {number} post_id
  * @returns {object[]} particular_posts
  */
-const getParticularPosts = () => {};
+const GetParticularPosts = (post_id) => {};
+
+/**
+ * @description 할 일 수정하기
+ * @returns {object} posts[post_id]
+ * @param {number} post_id
+ * @param {string} title
+ * @param {string || null} content
+ * @param {string} category
+ * @param {boolean} whether
+ * @param {string || null} tag
+ */
+const PatchPost = (post_id, title, content, category, whether, tag) => {};
+
+/**
+ * @description 특정 할 일의 특정 태그 수정하기
+ * @returns {object} particular_posts[post_id]
+ * @param {number} post_id
+ * @param {string} tag
+ */
+const PatchParticularPostTag = (post_id, tag) => {};
+
+/**
+ * @description ID 기반 할 일 삭제
+ * @param {number} post_id
+ */
+const DeletePost = (post_id) => {};
+
+/**
+ * @description 모든 할 일 제거
+ * @param {object[]} all_posts
+ */
+const DeleteAllPosts = (all_posts) => {};
+
+/**
+ * @description 특정 할 일 특정 태그 제거
+ * @param {number} particular_posts[post_id]
+ * @param {string} tag
+ */
+const DeleteParticularPostTag = (post_id, tag) => {};
+
+/**
+ * @description 특정 할 일 모든 태그 제거
+ * @param {number} particular_posts[post_id]
+ * @param {string[]} tag
+ */
+const DeleteParticularAllTag = (post_id, tag) => {};
