@@ -22,7 +22,6 @@ Todo {
  * @param {string} title
  * @param {string || null} content
  * @param {string} category
- * @param {boolean} whether
  * @param {string || null} tag
  * @returns {number} post_id
  */

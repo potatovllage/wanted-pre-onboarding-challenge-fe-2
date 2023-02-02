@@ -36,7 +36,7 @@
           <h4 class="name" id="createTodo">
             <span class="type-signature"></span>createTodo<span
               class="signature"
-              >(id, contents, categorys, tags)</span
+              >(title, contents, categorys, tags)</span
             ><span class="type-signature"></span>
           </h4>
 
@@ -212,7 +212,7 @@
           <h4 class="name" id="updateTodo">
             <span class="type-signature"></span>updateTodo<span
               class="signature"
-              >(id, contents, isCompleted, categorys, tags)</span
+              >(id, title, contents, whether, category, tag)</span
             ><span class="type-signature"></span>
           </h4>
 
@@ -338,6 +338,16 @@
               </tr>
 
               <tr>
+                <td class="name"><code>title</code></td>
+
+                <td class="type">
+                  <span class="param-type">string</span>
+                </td>
+
+                <td class="description last"><p>To do title.</p></td>
+              </tr>
+
+              <tr>
                 <td class="name"><code>contents</code></td>
 
                 <td class="type">
@@ -348,33 +358,33 @@
               </tr>
 
               <tr>
-                <td class="name"><code>isCompleted</code></td>
+                <td class="name"><code>whether</code></td>
 
                 <td class="type">
                   <span class="param-type">boolean</span>
                 </td>
 
-                <td class="description last"><p>To do Completed.</p></td>
+                <td class="description last"><p>To do whether.</p></td>
               </tr>
 
               <tr>
-                <td class="name"><code>categorys</code></td>
+                <td class="name"><code>category</code></td>
 
                 <td class="type">
                   <span class="param-type">string</span>
                 </td>
 
-                <td class="description last"><p>To do categorys.</p></td>
+                <td class="description last"><p>To do category.</p></td>
               </tr>
 
               <tr>
-                <td class="name"><code>tags</code></td>
+                <td class="name"><code>tag</code></td>
 
                 <td class="type">
                   <span class="param-type">string</span>
                 </td>
 
-                <td class="description last"><p>To do tags.</p></td>
+                <td class="description last"><p>To do tag.</p></td>
               </tr>
             </tbody>
           </table>
