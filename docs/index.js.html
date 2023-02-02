@@ -23,51 +23,77 @@
 
       <section>
         <article>
-          <pre class="prettyprint source linenums"><code>/**
- * Represents a Todos.
- * @typedef Todo
- * @type {Object}
- * @property {string} id - To do id.
- * @property {string} contents - To do Contents.
- * @property {boolean} isCompleted - To do Completed.
- * @property {string} categorys - To do categorys.
- * @property {string} tags - To do tags.
- */
-
-/**
- * Create todo.
- * @function createTodo
- * @param {string} id - To do id.
- * @param {string} contents - To do Contents.
- * @param {string} categorys - To do categorys.
- * @param {string} tags - To do tags.
- */
-function CreateTodo(id, contents, categorys, tags) {}
-
-/**
- * Read todo.
- * @function readTodo
- * @param {string} id - To do id.
- */
-function ReadTodo(id) {}
-
-/**
- * Update todo.
- * @function updateTodo
- * @param {string} id - To do id.
- * @param {string} contents - To do Contents.
- * @param {boolean} isCompleted - To do Completed.
- * @param {string} categorys - To do categorys.
- * @param {string} tags - To do tags.
- */
-function UpdateTodo(id, contents, isCompleted, categorys, tags) {}
-
-/**
- * Update Delete.
- * @param {string} id - To do id.
- * @function deleteTodo
- */
-function DeleteTodo(id) {}
+          <pre class="prettyprint source linenums"><code>
+            /**
+            * @description 할 일 추가하기
+            * @param {string} title
+            * @param {string || null} content
+            * @param {string} category
+            * @param {boolean} whether
+            * @param {string || null} tag
+            * @returns {number} post_id
+            */
+           const CreatePost = (title, content, category, whether, tag) => {};
+           
+           /**
+            * @description 모든 할 일 조회하기
+            * @returns {object[]} all_posts
+            */
+           const GetAllPosts = () => {};
+           
+           /**
+            * @description 특정 할 일 조회하기
+            * @param {number} post_id
+            * @returns {object[]} particular_posts
+            */
+           const GetParticularPosts = (post_id) => {};
+           
+           /**
+            * @description 할 일 수정하기
+            * @returns {object} posts[post_id]
+            * @param {number} post_id
+            * @param {string} title
+            * @param {string || null} content
+            * @param {string} category
+            * @param {boolean} whether
+            * @param {string || null} tag
+            */
+           const PatchPost = (post_id, title, content, category, whether, tag) => {};
+           
+           /**
+            * @description 특정 할 일의 특정 태그 수정하기
+            * @returns {object} particular_posts[post_id]
+            * @param {number} post_id
+            * @param {string} tag
+            */
+           const PatchParticularPostTag = (post_id, tag) => {};
+           
+           /**
+            * @description ID 기반 할 일 삭제
+            * @param {number} post_id
+            */
+           const DeletePost = (post_id) => {};
+           
+           /**
+            * @description 모든 할 일 제거
+            * @param {object[]} all_posts
+            */
+           const DeleteAllPosts = (all_posts) => {};
+           
+           /**
+            * @description 특정 할 일 특정 태그 제거
+            * @param {number} particular_posts[post_id]
+            * @param {string} tag
+            */
+           const DeleteParticularPostTag = (post_id, tag) => {};
+           
+           /**
+            * @description 특정 할 일 모든 태그 제거
+            * @param {number} particular_posts[post_id]
+            * @param {string[]} tag
+            */
+           const DeleteParticularAllTag = (post_id, tag) => {}; 
+           
 </code></pre>
         </article>
       </section>
