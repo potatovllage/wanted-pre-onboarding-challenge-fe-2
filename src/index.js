@@ -29,5 +29,14 @@ Todo {
 const Create = (title, content, category, whether, tag) => {};
 
 /**
- *
+ * @description 모든 할 일 조회하기
+ * @return {object[]} all_posts
  */
+const getAllPosts = () => {};
+
+/**
+ * @description 특정 할 일 조회하기
+ * @param {number} post_id
+ * @returns {object[]} particular_posts
+ */
+const getParticularPosts = () => {};
